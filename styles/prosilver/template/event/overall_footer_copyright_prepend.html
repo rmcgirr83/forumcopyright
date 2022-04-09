@@ -1,0 +1,5 @@
+{%if S_FORUM_COPYRIGHT %}
+		<p class="footer-row">
+			<span class="footer-copyright">{{ FORUM_COPYRIGHT }} {{ FORUM_BEGIN_YEAR }} - <script>var year=new Date(); year=year.getYear(); if (year<1900) year+=1900; document.write(year);</script> {{ SITENAME }}</span>
+		</p>
+{% endif %}

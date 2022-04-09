@@ -1,0 +1,9 @@
+services:
+    rmcgirr83.forumcopyright.listener:
+        class: rmcgirr83\forumcopyright\event\listener
+        arguments:
+            - '@config'
+            - '@language'
+            - '@template'
+        tags:
+            - { name: event.listener }
