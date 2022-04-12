@@ -58,7 +58,7 @@ class listener implements EventSubscriberInterface
 		];
 	}
 
-	/* Display additional metdate in extension details
+	/* Display additional metadata in extension details
 	*
 	* @param $event			event object
 	* @param return null
@@ -88,7 +88,6 @@ class listener implements EventSubscriberInterface
 		$this->language->add_lang('common', 'rmcgirr83/forumcopyright');
 
 		$begin_year = date("Y",$this->config['board_startdate']);
-		$current_year = '<script>var year=new Date(); year=year.getYear(); if (year<1900) year+=1900; document.write(year);</script>';
 
 		// assign the forum stats to the template.
 		$this->template->assign_vars([
