@@ -24,13 +24,13 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 class listener implements EventSubscriberInterface
 {
 
-	/** @var config $config */
+	/** @var config */
 	protected $config;
 
-	/** @var language $language */
+	/** @var $language */
 	protected $language;
 
-	/** @var template $template */
+	/** @var $template */
 	protected $template;
 
 	public function __construct(

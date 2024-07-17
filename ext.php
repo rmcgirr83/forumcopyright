@@ -24,7 +24,7 @@ class ext extends \phpbb\extension\base
 	public function is_enableable()
 	{
 		$config = $this->container->get('config');
-		$allowed = (phpbb_version_compare($config['version'], '3.3', '>=') && phpbb_version_compare($config['version'], '4.0', '<')) ? true : false;
+		$allowed = (phpbb_version_compare($config['version'], '3.3', '>=')) ? true : false;
 		return $allowed;
 	}
 }
